@@ -84,6 +84,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomExceptions.cs" />
     <Compile Include="ET_Client.cs" />
     <Compile Include="ExactTargetSOAP.cs" />
     <Compile Include="JWT.cs" />

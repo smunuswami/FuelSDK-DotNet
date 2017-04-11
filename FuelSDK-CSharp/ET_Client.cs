@@ -105,7 +105,7 @@ namespace FuelSDK
             }
 
             if (string.IsNullOrEmpty(configSection.ClientId) || string.IsNullOrEmpty(configSection.ClientSecret))
-                throw new Exception("clientId or clientSecret is null: Must be provided in config file or passed when instantiating ET_Client");
+                throw new ClientCredentialMissingException("clientId or clientSecret is null: Must be provided in config file or passed when instantiating ET_Client");
 
             // If JWT URL Parameter Used
             var organizationFind = false;
@@ -120,7 +120,7 @@ namespace FuelSDK
             else if (parameters != null && parameters.AllKeys.Contains("jwt") && !string.IsNullOrEmpty(parameters["jwt"]))
             {
                 if (string.IsNullOrEmpty(configSection.AppSignature))
-                    throw new Exception("Unable to utilize JWT for SSO without appSignature: Must be provided in config file or passed when instantiating ET_Client");
+                    throw new AppSignatureMissingException("Unable to utilize JWT for SSO without appSignature: Must be provided in config file or passed when instantiating ET_Client");
                 var encodedJWT = parameters["jwt"].ToString().Trim();
                 var decodedJWT = JsonWebToken.Decode(encodedJWT, configSection.AppSignature);
                 var parsedJWT = JObject.Parse(decodedJWT);
