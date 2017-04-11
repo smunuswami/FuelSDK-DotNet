@@ -26,7 +26,7 @@ namespace FuelSDK.Tests
         public void ETClientNoClientId()
         {
             //set empty to client id and save the configuration to simulate emtpy client id  in config file
-            _parameters["clientId"] = "test";
+            _parameters["clientId"] = string.Empty;
 
             //now construct a ET_Client object
             var etClient = new ET_Client(_parameters);
