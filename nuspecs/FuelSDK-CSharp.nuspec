@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package>
   <metadata>
-    <id>FuelSDK-CSharp</id>
+    <id>FuelSDK-DotNet</id>
     <version>1.0.0</version>
-    <title>FuelSDK-CSharp</title>
+    <title>FuelSDK-DotNet</title>
     <authors>ExactTarget</authors>
     <owners>ExactTarget</owners>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
