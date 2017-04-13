@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>FuelSDK-DotNet</id>
-    <version>1.0.0</version>
+    <version>1.0.1-alpha-1</version>
     <title>FuelSDK-DotNet</title>
     <authors>ExactTarget</authors>
     <owners>ExactTarget</owners>
