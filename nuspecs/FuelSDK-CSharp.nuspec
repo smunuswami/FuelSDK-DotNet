@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The Fuel SDK for C# provides easy access to ExactTarget's Fuel API Family services, including a collection of REST APIs and a SOAP API. These APIs provide access to ExactTarget functionality via common collection types.</description>
     <releaseNotes></releaseNotes>
-    <copyright>Copyright 2013</copyright>
+    <copyright>Copyright 2017</copyright>
     <tags>FuelSdk</tags>
     <language>en-US</language>
     <dependencies>
@@ -20,12 +20,4 @@
       </group>
     </dependencies>
   </metadata>
-  <files>
-    <file src="build\3.5\FuelSDK.dll" target="lib\net35" />
-    <file src="build\3.5\FuelSDK.xml" target="lib\net35" />
-    <file src="build\4.0\FuelSDK.dll" target="lib\net40" />
-    <file src="build\4.0\FuelSDK.xml" target="lib\net40" />
-    <file src="build\4.0\App.config.transform" target="content" />
-    <file src="FuelSDK-CSharp\**\*.cs" target="src\FuelSDK-CSharp" />
-  </files>
-</package>
+ </package>
